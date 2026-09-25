@@ -1,0 +1,131 @@
+/**
+*
+* ---------------------------------------------------------------------------
+*
+* Template Name : Garden - Landscaping & Gardening HTML Template
+* Author : Yeachen Abir
+* Author Mail : yeachenabir@gmail.com
+* Version : 1.0
+*
+* --------------------------------------------------------------------------- 
+*
+**/
+
+/*------------------------------------------------------------------
+  Global Stylesheet Start
+-------------------------------------------------------------------*/
+:root {
+  --body-font: "Raleway", sans-serif;
+  --heading-font: "Raleway", sans-serif;
+  --bg-color-1: rgb(38, 42, 51);
+  --bg-color-2: rgb(70, 99, 114);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+ 
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.theme-black{
+  background-color: var(--bg-color-1);
+}
+
+.bg-theme {
+  background-color: var(--bg-color-2);
+}
+
+.lg-text {
+  letter-spacing: -4px;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 10.5vw;
+  font-weight: 400;
+  line-height: 1;
+
+  @media (max-width: 991px) {
+    font-size: 11vw
+  }
+
+  @media (max-width: 767px) {
+    letter-spacing: -3px;
+    word-break: keep-all;
+    font-size: 11vw;
+  }
+
+  @media (max-width: 479px) {
+    letter-spacing: -3px;
+    font-size: 17vw;
+  }
+}
+
+.section-btn {
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    border-bottom: 1px solid white;
+    transform: scaleX(1);
+    transform-origin: center right;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after{
+    transform: scaleX(0);
+  }
+}
+
+/*------------------------------------------------------------------
+  Global Stylesheet End
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+  Hero Stylesheet Start
+-------------------------------------------------------------------*/
+.hero-section{
+  .hero-content {
+    min-height: 100vh;
+    
+    &::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background-color: rgb(38, 42, 51, .3);
+      z-index: -1;
+    }
+
+    .hero-video{
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+
+      video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    }
+  }
+}
+/*------------------------------------------------------------------
+  Hero Stylesheet End
+-------------------------------------------------------------------*/
