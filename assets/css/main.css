@@ -104,7 +104,7 @@ ul {
     position: absolute;
     content: "";
     inset: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--bs-body-bg);
     transform: scaleX(1);
     transform-origin: center right;
     transition: all 0.3s ease-in-out;
@@ -133,6 +133,22 @@ ul {
 /*------------------------------------------------------------------
   Global Stylesheet End
 -------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+  Header Stylesheet Start
+-------------------------------------------------------------------*/
+.header-section{
+  z-index: 999;
+  &.header-bg{
+    background-color: var(--bg-color-1);
+  }
+
+
+}
+/*------------------------------------------------------------------
+  Header Stylesheet End
+-------------------------------------------------------------------*/
+
 /*------------------------------------------------------------------
   Hero Stylesheet Start
 -------------------------------------------------------------------*/
@@ -165,3 +181,63 @@ ul {
 /*------------------------------------------------------------------
   Hero Stylesheet End
 -------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+  portfolio Stylesheet End
+-------------------------------------------------------------------*/
+.portfolio-section {
+  .slider-item {
+    .slider-title{
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.57);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+/*------------------------------------------------------------------
+  portfolio Stylesheet End
+-------------------------------------------------------------------*/
+
+
+
+/* ========================================
+   PAGINATION DOTS
+======================================== */
+
+.swiper-pagination {
+	position: relative !important;
+	display: flex;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+.swiper-scrollbar {
+	position: relative !important;
+	height: 0.6rem !important;
+	background: var(--bg-color-2);
+	border-radius: 50px;
+}
+
+.swiper-scrollbar-drag {
+	background: var(--bs-body-bg);
+	border-radius: 50px;
+}

@@ -29,12 +29,45 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
   <!-- All CSS Files Start -->
   <!-- ====== bootstrap css ======= -->
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ====== swiper css ======= -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <!-- ====== style css ======= -->
   <link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
 
 <body>
+  <!-- Header Section Start -->
+  <header id="header" class="header-section position-fixed w-100">
+    <div class="container-fluid px-5 py-4">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-2">
+          <div class="header-logo w-75">
+            <a href="#">
+              <img src="./assets/images/logo.svg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="desktop-menu">
+            <nav class="nav justify-content-center">
+              <a class="nav-link text-light fs-4 text-uppercase active" aria-current="page" href="#">Team</a>
+              <a class="nav-link text-light fs-4 text-uppercase" aria-current="page" href="#">Our Approach</a>
+              <a class="nav-link text-light fs-4 text-uppercase" aria-current="page" href="#">Portfolio</a>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <nav class="nav justify-content-end">
+            <a class="nav-link text-light fs-4 text-uppercase active" href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+
   <!-- Hero Banner Section Start -->
   <div id="hero" class="hero-section position-relative">
     <div class="container-fluid">
@@ -175,8 +208,70 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         </div>
       </div>
     </div>
+
+    <div class="container-fluid">
+      <div class="gallery-component">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- slider item 01 -->
+            <div class="slider-item swiper-slide position-relative ">
+              <div class="slider-img">
+                <img src="./assets/images/portfolio/Cocana.jpg" class="img-fluid" alt="">
+              </div>
+              <h4 class="slider-title display-2 mb-0">Cocana</h4>
+            </div>
+            <!-- slider item 01 -->
+            <div class="slider-item swiper-slide position-relative ">
+              <div class="slider-img">
+                <img src="./assets/images/portfolio/Cocana.jpg" class="img-fluid" alt="">
+              </div>
+              <h4 class="slider-title display-2 mb-0">Cocana</h4>
+            </div>
+            <!-- slider item 01 -->
+            <div class="slider-item swiper-slide position-relative ">
+              <div class="slider-img">
+                <img src="./assets/images/portfolio/Cocana.jpg" class="img-fluid" alt="">
+              </div>
+              <h4 class="slider-title display-2 mb-0">Cocana</h4>
+            </div>
+            <!-- slider item 01 -->
+            <div class="slider-item swiper-slide position-relative ">
+              <div class="slider-img">
+                <img src="./assets/images/portfolio/Cocana.jpg" class="img-fluid" alt="">
+              </div>
+              <h4 class="slider-title display-2 mb-0">Cocana</h4>
+            </div>
+            <!-- slider item 01 -->
+            <div class="slider-item swiper-slide position-relative ">
+              <div class="slider-img">
+                <img src="./assets/images/portfolio/Cocana.jpg" class="img-fluid" alt="">
+              </div>
+              <h4 class="slider-title display-2 mb-0">Cocana</h4>
+            </div>
+
+          </div>
+
+
+          <!-- Controls -->
+          <div class="slider-controls mt-5">
+            <div class="row px-4">
+              <div class="col-6">
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="col-6">
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
   <!-- Strategy Section End -->
+
 
   <div class="" style="min-height: 100vh;"></div>
   <div class="bg-light" style="min-height: 100vh;"></div>
@@ -185,6 +280,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
   <!-- All JS Files Start -->
   <!-- ====== Bootstrap js ======= -->
   <script src="./assets/js/bootstrap.min.js" defer></script>
+  <!-- ====== swiper js ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <!-- ====== Main js ======= -->
   <script src="./assets/js/main.js" defer></script>
 
