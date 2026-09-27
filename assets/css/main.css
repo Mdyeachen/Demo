@@ -290,7 +290,6 @@ ul {
 	height: 0.6rem !important;
 	background: var(--bg-color-2);
 	border-radius: 50px;
-	margin-right: 1rem;
 }
 
 .swiper-scrollbar-drag {
@@ -298,9 +297,6 @@ ul {
 	border-radius: 50px;
 }
 
-.swiper-scrollbar-drag {
-	width: 7em !important;
-}
 /*------------------------------------------------------------------
   portfolio Stylesheet End
 -------------------------------------------------------------------*/
