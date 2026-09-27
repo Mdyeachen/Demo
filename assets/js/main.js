@@ -1,5 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
   /* ==========================================================================
+     GSAP Animation Section Start
+  ========================================================================== */
+  gsap.registerPlugin(ScrollTrigger);
+  const imgContainer = document.querySelectorAll(".animation-img");
+  imgContainer.forEach((container) => {
+    const img = container.querySelector("img");
+    gsap.fromTo(
+      img,
+      {
+        scale: 1,
+      },
+      {
+        scale: 1.1,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: container,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        },
+      },
+    );
+  });
+  /* ==========================================================================
+     GSAP Animation Section End
+  ========================================================================== */
+
+  /* ==========================================================================
     Header Section Start
   ========================================================================== */
 
@@ -18,9 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
   ========================================================================== */
 
   /* ==========================================================================
-     Header Section Start
+     Portfolio Section Start
   ========================================================================== */
-
   const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: "4%",
@@ -67,8 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navigation: false,
   });
-
   /* ==========================================================================
-     Header Section End
+     Portfolio Section End
   ========================================================================== */
 });

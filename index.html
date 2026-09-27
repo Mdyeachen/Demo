@@ -59,7 +59,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 </a>
               </div>
 
-              <div class="close-btn text-white" data-bs-dismiss="offcanvas" aria-label="Close">
+              <div class="close-btn text-white" data-bs-dismiss="offcanvas" role="Close">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor"
                   class="bi bi-x-lg" viewBox="0 0 16 16">
                   <path
@@ -91,7 +91,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
           <!-- mobile icon  -->
           <div class="mobilemenu-icon d-flex d-lg-none justify-content-end text-white px-4" data-bs-toggle="offcanvas"
-            data-bs-target="#mobileOffCanvas" aria-controls="mobileOffCanvas" aria-label="mobile menu">
+            data-bs-target="#mobileOffCanvas" aria-controls="mobileOffCanvas" role="mobile toggle icon">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" fill="currentColor"
               class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd"
@@ -151,7 +151,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
   <!-- About Section Start -->
   <section id="about" class="about-section bg-theme text-light">
-    <div class="about-img">
+    <div class="about-img animation-img overflow-hidden">
       <img src="./assets/images/about-bg.jpeg" class="img-fluid" alt="">
     </div>
     <div class="container-fluid py-5">
@@ -178,7 +178,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <div class="container-fluid">
       <div class="row px-4">
         <div class="col-12">
-          <div class="team-img section-img">
+          <div class="team-img section-img animation-img overflow-hidden">
             <img src="./assets/images/team-bg.jpg" class="img-fluid" alt="">
           </div>
         </div>
@@ -206,7 +206,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
   <!-- Strategy Section Start -->
   <section id="strategy" class="strategy-section theme-black text-light">
-    <div class="strategy-img">
+    <div class="strategy-img animation-img overflow-hidden">
       <img src="./assets/images/strategy-bg.jpg" class="img-fluid" alt="">
     </div>
     <div class="container-fluid py-5">
@@ -380,6 +380,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
   <!-- All JS Files Start -->
   <!-- ====== Bootstrap js ======= -->
   <script src="./assets/js/bootstrap.min.js" defer></script>
+  <!-- ====== gsap js ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <!-- ====== ScrollTrigger js ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
   <!-- ====== swiper js ======= -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <!-- ====== Main js ======= -->
