@@ -22,13 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
   ========================================================================== */
 
   const swiper = new Swiper(".mySwiper", {
-    loop: true,
-
     slidesPerView: 1,
     spaceBetween: "4%",
-
     autoHeight: false,
-    centeredSlides: false,
+    centeredSlides: true,
     followFinger: true,
     freeMode: false,
     slideToClickedSlide: false,

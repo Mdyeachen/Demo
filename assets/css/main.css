@@ -19,6 +19,7 @@
   --heading-font: "Raleway", sans-serif;
   --bg-color-1: rgb(38, 42, 51);
   --bg-color-2: rgb(70, 99, 114);
+  --gray: rgba(197, 197, 197, 0.9);
 }
 
 * {
@@ -42,6 +43,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.text-gray {
+  color: var(--gray);
 }
 
 .theme-black{
@@ -78,9 +83,27 @@ ul {
 }
 
 .heading-2 {
-  font-size: 5.12vw;
+  font-size: clamp(3rem, 0.818rem + 5.12vw, 8rem);
   font-weight: 400;
   line-height: 1;
+}
+
+.heading-3 {
+  font-size: clamp(2.6rem, 5.12vw, 5rem);
+  font-weight: 400 !important;
+  line-height: 1.1;
+}
+
+.heading-4 {
+  font-size: clamp(1.5rem, 4vw, 2.7rem);
+  font-weight: 400 !important;
+  line-height: 1.1;
+}
+
+.text-small {
+  letter-spacing: -.5px;
+  font-size: clamp(1.2rem, 2.2vw, 1.9rem);
+  line-height: 1.4;
 }
 
 .para-text {
@@ -197,11 +220,6 @@ ul {
     }
   }
 }
-/*------------------------------------------------------------------
-  portfolio Stylesheet End
--------------------------------------------------------------------*/
-
-
 
 /* ========================================
    PAGINATION DOTS
@@ -214,8 +232,8 @@ ul {
 }
 
 .swiper-pagination-bullet {
-	width: 22px;
-	height: 22px;
+	width: 1em;
+	height: 1em;
 	border-radius: 50%;
 	cursor: pointer;
 	opacity: 1;
@@ -235,9 +253,54 @@ ul {
 	height: 0.6rem !important;
 	background: var(--bg-color-2);
 	border-radius: 50px;
+	margin-right: 1rem;
 }
 
 .swiper-scrollbar-drag {
 	background: var(--bs-body-bg);
 	border-radius: 50px;
 }
+
+.swiper-scrollbar-drag {
+	width: 7em !important;
+}
+/*------------------------------------------------------------------
+  portfolio Stylesheet End
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+  Footer Stylesheet STart
+-------------------------------------------------------------------*/
+.footer-section {
+  .contact-form {
+    input, textarea {
+      background-color: transparent;
+      border: 0px;
+      border-bottom: 1px solid var(--bs-body-bg);
+      border-radius: 0%;
+      color: var(--bs-body-bg);
+
+      &::placeholder {
+        color: var(--gray);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      color: var(--bs-body-bg);
+      border: 1px solid;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--bs-body-bg);
+        color: var(--bg-color-1);
+      }
+    }
+  }
+}
+/*------------------------------------------------------------------
+  Footer Stylesheet End
+-------------------------------------------------------------------*/
