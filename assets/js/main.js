@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: "4%",
     autoHeight: false,
-    centeredSlides: true,
+    centeredSlides: false,
     followFinger: true,
     freeMode: false,
     slideToClickedSlide: false,
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       // Desktop
-      992: {
+      1200: {
         slidesPerView: 3,
         spaceBetween: "2%",
       },

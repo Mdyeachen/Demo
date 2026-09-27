@@ -153,6 +153,27 @@ ul {
   }
 }
 
+/* divider border  */
+.divider {
+  .divider-border{
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      height: 1px;
+      background-color: var(--gray);
+      transition: all 0.3s ease-in-out;
+      transform: scaleX(1);
+      transform-origin: center right;
+    }
+  }
+}
+
+.py-85{
+  padding-top: 5.4rem;
+  padding-bottom: 5.4rem;
+}
+
 /*------------------------------------------------------------------
   Global Stylesheet End
 -------------------------------------------------------------------*/
