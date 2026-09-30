@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ========================================================================== */
   gsap.registerPlugin(ScrollTrigger);
   const imgContainer = document.querySelectorAll(".animation-img");
+  const imgConRev = document.querySelectorAll(".animation-img-2");
   imgContainer.forEach((container) => {
     const img = container.querySelector("img");
     gsap.fromTo(
@@ -22,6 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     );
+  });
+
+  imgConRev.forEach((container) => {
+    const img = container.querySelector("img");
+    gsap.from(img, {
+      scale: 1.1,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: container,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1.5,
+      },
+    });
   });
   /* ==========================================================================
      GSAP Animation Section End

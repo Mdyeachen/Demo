@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- Change the value of lang="en" attribute if your website's language is not English.
+You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
+<html lang="en">
+
+<head>
+
+  <!-- ====== Meta ======= -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Garden - Landscaping & Gardening HTML Template">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <!-- ====== Page Title ======= -->
+  <title>Team Hospitality Pages - RV Capital</title>
+
+  <!-- ====== Favicon Icon ======= -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- All CSS Files Start -->
+  <!-- ====== bootstrap css ======= -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ====== swiper css ======= -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <!-- ====== style css ======= -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header id="header" class="header-section position-fixed w-100">
+    <div class="container-fluid px-sm-5 py-4">
+      <div class="row justify-content-center align-items-center">
+        <div class="col col-lg-2">
+          <div class="header-logo w-75">
+            <a href="/" aria-label="logo images">
+              <img src="./assets/images/logo.svg" alt="" aria-hidden="true" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-8">
+          <!-- mobile menu  -->
+          <div class="mobile-menu offcanvas offcanvas-top theme-black py-4 d-lg-none" tabindex="-1"
+            id="mobileOffCanvas">
+            <div class="offcanvas-header justify-content-between px-sm-5">
+              <div class="header-logo w-75">
+                <a href="#">
+                  <img src="./assets/images/logo.svg" alt="" class="img-fluid">
+                </a>
+              </div>
+
+              <div class="close-btn text-white" data-bs-dismiss="offcanvas">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor"
+                  class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="mobile-nav d-flex justify-content-center align-items-center h-100">
+                <nav class="nav flex-column gap-2 text-center">
+                  <a class="nav-link fs-4 text-uppercase text-light" href="/team.html">Team</a>
+                  <a class="nav-link fs-4 text-uppercase text-light" href="#">Our Approach</a>
+                  <a class="nav-link fs-4 text-uppercase text-light" href="#">Portfolio</a>
+                  <a class="nav-link fs-4 text-uppercase text-light" href="#">Contact</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!-- desktop menu  -->
+          <div class="desktop-menu d-none d-lg-flex justify-content-center">
+            <nav class="nav">
+              <a class="nav-link text-light fs-4 text-uppercase" aria-current="page" href="/team.html">Team</a>
+              <a class="nav-link text-light fs-4 text-uppercase" aria-current="page" href="#">Our Approach</a>
+              <a class="nav-link text-light fs-4 text-uppercase" aria-current="page" href="#">Portfolio</a>
+            </nav>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+
+          <!-- mobile icon  -->
+          <div class="mobilemenu-icon d-flex d-lg-none justify-content-end text-white px-4" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileOffCanvas" aria-controls="mobileOffCanvas">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" fill="currentColor"
+              class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </div>
+
+          <nav class="nav d-none d-lg-flex justify-content-end">
+            <a class="nav-link text-light fs-4 text-uppercase active" href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+
+  <!-- Hero Banner Section Start -->
+  <div id="hero" class="hero-section position-relative overflow-hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content overflow-hidden z-1 text-capitalize text-light d-flex align-items-end">
+            <h1 class="lg-text fw-normal p-4">About us</h1>
+            <!-- hero video background  -->
+            <div class="hero-video">
+              <img src="./assets/images/about-page/about-bg.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Banner Section End -->
+
+  <!-- Intro Section Start -->
+  <section id="intro" class="intro-section theme-black py-85">
+    <div class="container-fluid">
+      <div class="row px-4">
+        <div class="col-12">
+          <div class="intro-content">
+            <h2 class="d-none" aria-label="Intro Section" aria-hidden="true">About Intro Section</h2>
+            <p class="heading-3 fw-medium text-light">Our team combines institutional investment experience with
+              entrepreneurial drive to identify opportunities and execute with excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Intro Section End -->
+
+  <!-- team section Start -->
+  <div class="team-section">
+    <!-- Investor Header -->
+    <div class="theme-black text-light">
+      <div class="container-fluid">
+        <div class="row px-4">
+          <div class="col-lg-12">
+            <p class="fw-medium text-uppercase text-gray fs-5 fw-light mb-0">investment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider Section start -->
+    <div class="divider theme-black pt-2 pb-4">
+      <div class="container-fluid">
+        <div class="row px-4">
+          <div class="divider-border position-relative"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Divider Section End -->
+
+    <div class="section-team-member theme-black ">
+      <div class="container-fluid">
+        <div class="row px-4">
+          <!-- investor member  -->
+          <div class="col-lg-4">
+            <div class="section-team-item">
+              <div class="section-team-item-img animation-img-2 overflow-hidden">
+                <img src="./assets/images/about-page/investment/investment-01.jpg" alt="">
+              </div>
+
+              <div class="section-team-item-content text-white d-flex flex-column gap-2 pt-3 pb-5">
+                <h3 class="section-team-item-title mb-0">Vinesh Motwani</h3>
+                <p class="fw-medium text-uppercase text-gray fs-5 fw-light mb-0">Co-Founder, CEO &
+                  CIO</p>
+                <a class="text-white" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- investor member  -->
+          <div class="col-lg-4">
+            <div class="section-team-item">
+              <div class="section-team-item-img animation-img-2 overflow-hidden">
+                <img src="./assets/images/about-page/investment/investment-02.jpg" alt="">
+              </div>
+
+              <div class="section-team-item-content text-white d-flex flex-column gap-2 pt-3 pb-5">
+                <h3 class="section-team-item-title mb-0">Ritesh Punjabi</h3>
+                <p class="fw-medium text-uppercase text-gray fs-5 fw-light mb-0">Co-Founder</p>
+                <a class="text-white d-none" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- investor member  -->
+          <div class="col-lg-4">
+            <div class="section-team-item">
+              <div class="section-team-item-img animation-img-2 overflow-hidden">
+                <img src="./assets/images/about-page/investment/investment-03.jpg" alt="">
+              </div>
+
+              <div class="section-team-item-content text-white d-flex flex-column gap-2 pt-3 pb-5">
+                <h3 class="section-team-item-title mb-0">Asiri Kirindage</h3>
+                <p class="fw-medium text-uppercase text-gray fs-5 fw-light mb-0">Principal - Finance, Investment
+                  Operations & Strategy</p>
+                <a class="text-white" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- team section End -->
+
+  <!-- team section Start -->
+  <div class="team-section">
+    <!-- Investor Header -->
+    <div class="theme-black text-light">
+      <div class="container-fluid">
+        <div class="row px-4">
+          <div class="col-lg-12">
+            <p class="fw-medium text-uppercase text-gray fs-5 fw-light mb-0">operations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider Section start -->
+    <div class="divider theme-black pt-2 pb-4">
+      <div class="container-fluid">
+        <div class="row px-4">
+          <div class="divider-border position-relative"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Divider Section End -->
+
+    <div class="section-team-member theme-black ">
+      <div class="container-fluid">
+        <div class="row px-4">
+          <!-- investor member  -->
+          <div class="col-lg-4">
+            <div class="section-team-item">
+              <div class="section-team-item-img animation-img-2 overflow-hidden">
+                <img src="./assets/images/about-page/operations/operations-01.jpg" alt="">
+              </div>
+
+              <div class="section-team-item-content text-white d-flex flex-column gap-2 pt-3 pb-5">
+                <h3 class="section-team-item-title mb-0">Rony Rajan</h3>
+                <p class="fw-medium text-uppercase text-gray fs-5 fw-light mb-0">Tech, Infrastructure and Cyber Security
+                </p>
+                <a class="text-white d-none" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- investor member  -->
+          <div class="col-lg-4">
+            <div class="section-team-item">
+              <div class="section-team-item-img animation-img-2 overflow-hidden">
+                <img src="./assets/images/about-page/operations/operations-02.jpg" alt="">
+              </div>
+
+              <div class="section-team-item-content text-white d-flex flex-column gap-2 pt-3 pb-5">
+                <h3 class="section-team-item-title mb-0">Louise Lacuna</h3>
+                <p class="fw-medium text-uppercase text-gray fs-5 fw-light mb-0">Administration</p>
+                <a class="text-white d-none" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- team section End -->
+
+
+
+  <!-- Divider Section start -->
+  <div class="divider theme-black">
+    <div class="container-fluid">
+      <div class="row px-5">
+        <div class="divider-border position-relative"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Divider Section End -->
+
+  <!-- Intro Section Start -->
+  <section id="text" class="text-section theme-black py-85">
+    <div class="container-fluid">
+      <div class="row px-4">
+        <div class="col-12">
+          <div class="intro-content">
+            <h2 class="d-none" aria-label="Intro Section" aria-hidden="true">Text Intro Section</h2>
+            <p class="heading-3 fw-medium text-light">We identify undervalued hospitality assets and unlock their
+              potential through strategic repositioning and operational excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Intro Section End -->
+
+
+  <!-- Section Start -->
+  <section class="theme-section bg-theme text-light">
+    <div class="container-fluid py-85">
+      <div class="row px-4">
+        <div class="col-lg-6 col-sm-12">
+          <div class="section-title">
+            <h2 class="heading-2 text-capitalize">Approach</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="section-content border-bottom py-3 pe-3">
+            <p class="para-text text-capitalize">investment focus</p>
+            <p class="text-small text-light">We target high-quality hospitality assets in underserved Asia-Pacific
+              markets overlooked by institutional capital.</p>
+          </div>
+          <div class="section-content border-bottom py-3 pe-3">
+            <p class="para-text text-capitalize">investment focus</p>
+            <p class="text-small text-light">We target high-quality hospitality assets in underserved Asia-Pacific
+              markets overlooked by institutional capital.</p>
+          </div>
+          <div class="section-content border-bottom py-3 pe-3">
+            <p class="para-text text-capitalize">investment focus</p>
+            <p class="text-small text-light">We target high-quality hospitality assets in underserved Asia-Pacific
+              markets overlooked by institutional capital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section End -->
+
+  <!-- Section Start -->
+  <section class="theme-section bg-theme text-light">
+    <div class="container-fluid py-85">
+      <div class="row px-4">
+        <div class="col-lg-6 col-sm-12">
+          <div class="section-title">
+            <h2 class="heading-2 text-capitalize">Approach</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="section-content border-bottom py-3 pe-3">
+            <p class="para-text text-capitalize">investment focus</p>
+            <p class="text-small text-light">We target high-quality hospitality assets in underserved Asia-Pacific
+              markets overlooked by institutional capital.</p>
+          </div>
+          <div class="section-content border-bottom py-3 pe-3">
+            <p class="para-text text-capitalize">investment focus</p>
+            <p class="text-small text-light">We target high-quality hospitality assets in underserved Asia-Pacific
+              markets overlooked by institutional capital.</p>
+          </div>
+          <div class="section-content border-bottom py-3 pe-3">
+            <p class="para-text text-capitalize">investment focus</p>
+            <p class="text-small text-light">We target high-quality hospitality assets in underserved Asia-Pacific
+              markets overlooked by institutional capital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section End -->
+
+
+
+
+
+
+  <!-- footer Section Start -->
+  <footer id="footer" class="footer-section bg-theme">
+    <div class="container-fluid py-5">
+      <div class="row px-4 justify-content-between">
+        <div class="col-lg-3 col-md-12">
+          <!-- footer content -->
+          <div class="footer-content">
+            <p class="fw-medium text-uppercase text-gray fs-5 fw-light">location</p>
+
+            <div class="footer-address mb-5">
+              <h3 class="heading-4 text-light">UAE</h3>
+              <p class="text-small text-light">One Central, Dubai World Trade Centre - Level 3 &amp; Level 5, <br>The
+                Offices 3, DWTC
+                - Trade Center Second - Dubai</p>
+            </div>
+            <div class="footer-address">
+              <h4 class="heading-4 text-light">Singapore</h4>
+              <p class="text-small text-light">10 Collyer Quay, Level 22, <br>Ocean Financial Centre</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="contact-form">
+            <h4 class="heading-4 text-light mb-5">Contact us</h4>
+            <form>
+              <input class="form-control fs-5 mb-4" type="text" placeholder="Name" aria-label="Name">
+              <input class="form-control fs-5 mb-4" type="email" placeholder="Email" aria-label="Email">
+              <input class="form-control fs-5 mb-4" type="text" placeholder="Phone Number" aria-label="Phone Number">
+              <textarea class="form-control fs-5 mb-4" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 70px"></textarea>
+              <button class="w-100 fs-5 p-3 ">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider Section start -->
+    <div class="divider bg-theme">
+      <div class="container-fluid">
+        <div class="row px-5">
+          <div class="divider-border position-relative"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Divider Section End -->
+
+    <div class="container-fluid py-5">
+      <div class="row px-4 gy-2 justify-content-between">
+        <div class="col-lg-6 col-md-12">
+          <div class="copyright-text text-gray fs-5">
+            <p class="mb-0">© RV Capital. All Rights Reserved 2026</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="copyright-social">
+            <nav class="nav gap-4 justify-content-lg-end">
+              <a class="nav-link text-gray p-0 fs-5" href="#">Linked In</a>
+              <a class="nav-link text-gray p-0 fs-5" href="#">Private Policy</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer Section End -->
+
+  <!-- All JS Files Start -->
+  <!-- ====== Bootstrap js ======= -->
+  <script src="./assets/js/bootstrap.min.js" defer></script>
+  <!-- ====== gsap js ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <!-- ====== ScrollTrigger js ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+  <!-- ====== swiper js ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- ====== Main js ======= -->
+  <script src="./assets/js/main.js" defer></script>
+
+</body>
+
+</html>

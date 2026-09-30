@@ -89,9 +89,14 @@ ul {
 }
 
 .heading-3 {
-  font-size: clamp(2.6rem, 5.12vw, 5rem);
+  font-size: clamp(1.8rem, 5.2vw, 4rem);
   font-weight: 400 !important;
   line-height: 1.1;
+  
+  @media (min-width: 1400px) {
+    font-size: clamp(1.8rem, 5.2vw, 5.5rem);
+    line-height: 1;
+  }
 }
 
 .heading-4 {
@@ -119,6 +124,12 @@ ul {
   @media (max-width: 767px) {
     font-size: clamp(32px, 4.17vw, 64px);
   }
+}
+
+.para-text-md {
+  font-size: clamp(32px, 3.3vw, 64px);
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .section-btn {
@@ -337,3 +348,12 @@ ul {
 /*------------------------------------------------------------------
   Footer Stylesheet End
 -------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+  About Us Page
+-------------------------------------------------------------------*/
+
+.section-team-item-title {
+  font-size: clamp(1.8rem, 1.7vw, 2.6rem);
+}
